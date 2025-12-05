@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centro Adopción Animales">
+    <meta name="keywords" content="Adopción, Animales, Protección, Perros, Gatos, Bienestar, Salud, Cuidados">
+    <meta name="author" content="La Turra">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/images/favicon.ico">
+    <title>Centro Adopción La Turra</title>
+</head>
+<body>
+  <header>
+    <img src="./assets/images/favicon.ico" class="logo" alt="Logo web" title="Logo página web">
+    <div class="titulos">
+      <p class="titulo-header">CAA La Turra</p>
+      <p class="titulo-header2">20 Años haciendo Historia</p>
+    </div>
+  </header>
+  <main>
+    <h1>Centro de Adopción de Animales La Turra</h1>
+    <img 
+      src="./assets/images/ImgKiwoko.webp"
+      class="imgKiwoko"
+      id="imgKiwoko"
+      alt="Foto de una mujer al lado de un perro, sosteniendo un gato"
+      title="Foto de una mujer al lado de un perro, sosteniendo un gato."
+      >
+    <p>Descubre en Kiwoko Adopción la oportunidad de darle un hogar y mucho amor a quienes más lo necesitan. Nuestros animales buscan una segunda oportunidad, y tú puedes ser parte de ese cambio. Cada adopción no solo transforma la vida del peludo que acoge una familia, también llena de alegría y cariño a quienes deciden abrirles la puerta de su casa. ¡Adopta, cambia una vida y deja que la tuya se llene de compañía, ternura y felicidad sin límites!</p>
+    <a href="https://www.kiwoko.com/servicios/kiwokoadopta/" target="_blank" class="linkWeb">Acceso a Kiwoko Adopta</a>
+    <section class="seccion">
+      <h2 style="display: none;">Adopción</h2>
+      <p>En Kiwoko existen cuatro tipos de animales a adoptar:</p>
+      <ul class="listaAnimales">
+        <li>Perros</li>
+        <li>Gatos</li>
+        <li>Tortugas</li>
+        <li>Conejos</li>
+      </ul>
+    </section>
+    <section class="seccion">
+      <h2 style="display: none;">Tabla de Animales</h2>
+      <p>En el <strong>Centro de Adopción de Animales La Turra</strong> trabajamos cada día para darles una segunda oportunidad a perros y gatos que buscan hogar. En colaboración con <strong>Kiwoko Adopta</strong>, unimos fuerzas para ofrecer atención, cariño y el mejor acompañamiento en el proceso de adopción. </p>
+      <p><em>Nuestro <strong>compromiso</strong> es encontrar familias responsables y brindar a cada animal la vida digna y feliz que merece.</em></p>
+      <p>A continuación encontraremos los últimos animales acogidos:</p>
+      <table class="tablaAdopciones">
+        <thead>
+          <tr>
+            <th>Nº Adopción</th>
+            <th>Nombre del Animal</th>
+            <th>Fecha</th>
+            <th>Foto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>250223-21</td>
+            <td>Wolfie</td>
+            <td>23/02/25</td>
+            <td><a href="./assets/images/Wolfie.webp" target="_blank">Imagen</a></td>
+          </tr>
+          <tr>
+            <td>250216-03</td>
+            <td>Matrañas</td>
+            <td>16/02/25</td>
+            <td><a href="./assets/images/matrañas.webp" target="_blank">Imagen</a></td>
+          </tr>
+          <tr>
+            <td>250222-01</td>
+            <td>RaboLocoModdy</td>
+            <td>25/02/22</td>
+            <td><a href="./assets/images/raboloco.webp" target="_blank">Imagen</a></td>
+          </tr>
+          <tr>
+            <td>250823-03</td>
+            <td>Truenos</td>
+            <td>23/08/25</td>
+            <td><a href="./assets/images/truenos.webp" target="_blank">Imagen</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="textoAdopta">
+      <p>¿Te han gustado las imágenes de nuestros <strong>peludos</strong>?</p>
+      <p>Cada uno de ellos espera con ilusión un hogar donde recibir cariño y dar todo el amor que llevan dentro. Si <strong>quieres adoptar</strong>, simplemente deja tus datos en el formulario y nos pondremos en contacto contigo. Todos nuestros perros están vacunados, revisados por veterinarios y listos para integrarse en una familia.</p>
+      <p>No tengas miedo: son animales nobles, agradecidos y con un corazón enorme. Las fotos de los que ya han sido adoptados son la mejor prueba de que adoptar cambia vidas, tanto la suya como la tuya. <strong>¡Anímate a darles una segunda oportunidad y a ganar un amigo fiel para siempre!</strong></p>
+    </section>
+    <section class="formulario" id="contactanos">          
+      <h2>Formulario de Adopción</h2>
+      <form action="#contactanos" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre: </label>
+          <input type="text" 
+                id="nombre" 
+                name="nombre" 
+                placeholder="Introduce tu nombre aquí..." 
+                required
+                >
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico: </label>
+          <input type="email" 
+                id="email" 
+                name="email" 
+                placeholder="example@hotmail.com"
+                required 
+                >
+        </div>
+        <div class="form-group">
+          <label for="comentario">Animal que quiere adoptar:</label>
+          <textarea id="comentario" 
+                    name="comentario"
+                    rows="4" 
+                    cols="40" 
+                    placeholder="Dinos que animal quieres adoptar... ¿y porqué?" 
+                    required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy;2025 Centro Adopción de Animales La Turra</p>
+    <p>Derechos Reservados.</p>
+  </footer>
+</body>
+</html>

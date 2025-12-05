@@ -1,0 +1,85 @@
+:root {
+  --field-border: #d0d5dd;
+  --field-bg: #ffffff;
+  --field-text: #111827;
+  --field-label: #6b7280;
+  --field-accent: #0051ff;
+  --field-error: #ef4444;
+  --field-radius: 8px;
+}
+
+/* BLOQUE PRINCIPAL */
+.field-floating {
+  position: relative;
+  display: inline-block;
+  font-family: Poppins, system-ui, -apple-system, sans-serif;
+  width: 260px;
+}
+
+/* INPUT */
+.field-floating__input {
+  width: 100%;
+  padding: 12px 12px 10px;
+  border: 1.5px solid var(--field-border);
+  border-radius: var(--field-radius);
+  background: var(--field-bg);
+  color: var(--field-text);
+  font-size: 15px;
+  line-height: 1.4;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* LABEL FLOTANTE */
+.field-floating__label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 4px;
+  background: var(--field-bg);
+  color: var(--field-label);
+  font-size: 14px;
+  pointer-events: none;
+  transition:
+    top 0.2s ease,
+    transform 0.2s ease,
+    font-size 0.2s ease,
+    color 0.2s ease;
+}
+
+/* FOCUS */
+.field-floating__input:focus {
+  border-color: var(--field-accent);
+  box-shadow: 0 0 0 1px var(--field-accent);
+}
+
+/* SUBE LABEL AL ESCRIBIR O ENFOCAR (sin cambiar color aún) */
+.field-floating__input:focus + .field-floating__label,
+.field-floating__input:not(:placeholder-shown) + .field-floating__label {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 11px;
+}
+
+/* COLOR azul SOLO mientras hay foco */
+.field-floating__input:focus + .field-floating__label {
+  color: var(--field-accent);
+}
+
+/* LABEL gris cuando hay texto pero sin foco */
+.field-floating__input:not(:focus):not(:placeholder-shown) + .field-floating__label {
+  color: var(--field-label);
+}
+
+/* Solo error cuando NO tiene foco */
+.field-floating__input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: var(--field-error);
+  box-shadow: 0 0 0 1px var(--field-error);
+}
+
+.field-floating__input:invalid:not(:focus):not(:placeholder-shown) + .field-floating__label {
+  color: var(--field-error);
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empresa dedicada a la Fontanería">
+    <meta name="keywords" content="Tuberías, grifos, agua, water, mierda">
+    <meta name="author" content="Patxi">
+    <title>Fontaneros S.L.</title>
+</head>
+<body>
+  <header>
+    <img src="./assets/images/fontanero.png" class="logo" alt="Logo web" title="Fontanero desatascando pila" height="50">
+  </header>
+  <main>
+    <h1>Fontaneros S.L.</h1>
+    <img 
+      src="https://fontanero-madrid.net/wp-content/uploads/2019/09/fontanerias-en-madrid.jpg"
+      class="imgFontanero"
+      id="imgFontanero"
+      alt="Foto de un hombre poco ordenado colocando un WC"
+      title="Foto de un hombre poco ordenado colocando un WC"
+      height="200"
+      >
+    <p>En Fontanería Patxi no prometemos milagros, pero casi. Reparamos fugas que parecen cascadas, desatascamos tuberías rebeldes y montamos instalaciones nuevas que duran más que los chistes de Patxi. Nos encargamos de todo: grifos, baños, cocinas y calentadores que funcionan de verdad. Si algo pierde agua, nosotros lo encontramos; si algo necesita agua, se la damos. Con herramientas, maña y buen humor, dejamos cada faena más limpia que un lavabo recién estrenado. En resumen: somos los que arreglamos lo que otros mojan.</p>
+    <a href="https://fontanerosl.com" rel="noopener noreferrer"  target="_blank" class="linkWeb">Acceso a Fontaneros S.L.</a>
+    
+    <section class="formulario" id="contacto">          
+      <h2>Contacta con nosotros</h2>
+      <form method="post">
+        <fieldset id="datosBasicos">
+          <legend>Datos básicos</legend>
+
+          <label for="formNombre">Nombre: </label>
+          <input type="text" 
+                id="formNombre" 
+                name="nombre" 
+                placeholder="Introduce tu nombre aquí..." 
+                required
+                >
+          <p></p>
+          
+          <label for="formEmail">Correo Electrónico: </label>
+          <input type="email" 
+                id="formEmail" 
+                name="email" 
+                placeholder="example@hotmail.com"
+                required 
+                >
+          <p></p>
+          
+          <label for="formTel">Teléfono: </label>
+          <input type="tel" 
+                id="formTel" 
+                name="tel" 
+                placeholder="623123123"
+                required 
+                >
+          <p></p>
+        
+        </fieldset>
+        <p></p>
+        <fieldset id="reservaDatos">
+          <legend>Datos de Reserva</legend>
+          
+          <label for="formDate">Fecha: </label>
+          <input type="date" id="formDate" name="date" required>
+          <p></p>
+          
+          <fieldset>
+            <legend>Tipo Trabajo</legend>    
+              
+              <input type="checkbox" id="formCB1" name="tipoTrabajo" value="reforma" >
+              <label for="formCB1" style="padding-right: 20px;">Reforma</label>
+
+              <input type="checkbox" id="formCB2" name="tipoTrabajo" value="limpieza" >
+              <label for="formCB2" style="padding-right: 20px;">Limpieza</label>
+              
+              <input type="checkbox" id="formCB3" name="tipoTrabajo" value="averia" >
+              <label for="formCB3" style="padding-right: 20px;">Avería</label>
+          
+          </fieldset>
+          <p></p>
+          
+          <fieldset>
+            <legend>Método Pago</legend>    
+              
+              <input type="radio" id="formRadio1" name="metodoPago" value="tarjeta" checked>
+              <label for="formRadio1" style="padding-right: 20px;">Tarjeta</label>
+
+              <input type="radio" id="formRadio2" name="metodoPago" value="black" >
+              <label for="formRadio2" style="padding-right: 20px;">Black</label>
+              
+              <input type="radio" id="formRadio3" name="metodoPago" value="transfBancaria" >
+              <label for="formRadio3" style="padding-right: 20px;">Transferencia Bancaria</label>
+
+              <input type="radio" id="formRadio4" name="metodoPago" value="bizzum" >
+              <label for="formRadio4" style="padding-right: 20px;">Bizzum</label>
+         
+          </fieldset>
+          <p></p>
+          
+          <label for="calTrabj">Calidad Trabajo</label>
+          <select id="calTrabj" name="variedad">
+            <option value="0" selected disabled>------------</option>
+            <option value="2">Mala</option>
+            <option value="3">Básica</option>
+            <optgroup label="prueba">
+            <option value="5">Buena</option>
+            <option value="10">Excelente</option>
+            </optgroup>
+            </select>
+          <p></p>
+          <p></p>
+          
+          <label for="comentario">Descripción Trabajos:</label>
+          <p></p>
+          <textarea id="comentario" 
+                    name="comentario"
+                    rows="4" 
+                    cols="40" 
+                    placeholder="Comentanós todo lo que necesites para realizar el trabajo." 
+                    required></textarea>
+          <p></p>
+          
+          <label>Lote (elige varios)</label>
+         <!-- <input type="text" name="lotes"> -->
+        
+          <select name="lotes[]" multiple size="4">
+            <option value="lote-a">Lote A</option>
+            <option value="lote-b">Lote B</option>
+            <option value="lote-c">Lote C</option>
+            <option value="lote-d">Lote D</option>
+            <option value="lote-e">Lote E</option>
+          </select>
+          
+          </fieldset>
+          <p></p>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar Formulario</button>
+          <p></p>
+          <label>Adjuntar Factura</label>
+          <input type="file" accept=".jpg, .jpeg" multiple>
+          <label>Progreso de la carga</label>
+          <progress min="0" max="100" value="25"></progress>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy;2025 Fontaneros S.L.</p>
+    <p>Derechos Reservados.</p>
+  </footer>
+</body>
+</html>
