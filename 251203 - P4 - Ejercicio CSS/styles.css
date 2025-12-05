@@ -1,0 +1,89 @@
+*{
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem; /*dudo aquí*/
+    background-color: azure;
+    color: #333;
+    padding: 1rem;
+}
+
+header{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding-bottom: 8px;
+}
+
+.contacto{
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.contacto .trozo{
+    color: blue;
+    font-weight: bold;
+}
+
+.form .campo{
+    margin-bottom: 15px;
+}
+
+.form .campo span{
+    display:block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form input, 
+.form textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(10,113,136);
+    font-size: 1.2rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form input:hover,
+.form textarea:hover{
+    border: 3px solid red;
+}
+    
+.form input:focus,
+.form textarea:focus{
+    outline: none;
+    border-color: red;
+    box-shadow: 0px 0px 5px orange;
+}
+
+.btn{
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0px 10px 10px;
+    transition: border-color 0.3s ease;
+}
+
+.btn-enviar{
+    background-color: cadetblue;
+    color: white;
+}
+
+.btn-borrar{
+    background-color: red;
+    color: white;
+}
+
+.btn-enviar:hover,
+.btn-borrar:hover{
+    background-color: grey;
+    transform: scale(1.05);
+}

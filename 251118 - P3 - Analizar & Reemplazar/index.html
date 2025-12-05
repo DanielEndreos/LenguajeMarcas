@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosko Carlos</title>
+</head>
+
+<body>
+
+    <!-- CABECERA SIN SEMÁNTICA -->
+    <header>
+        <h1>Kiosko Carlos - Venta de Pájaros</h1>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Catálogo</a>
+            <a href="#">Cuidados</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+        <figure>
+            <img src="./assets/images/canario.jpg" width="40%" alt="Canario amarillo">
+            <figcaption>Canario amarillo cantando en su jaula</figcaption>
+        </figure>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL SIN SEMÁNTICA -->
+    <main>
+
+        <!-- BLOQUE PRINCIPAL QUE SERÍA UN ARTICLE -->
+        <article>
+            <h2>Cómo elegir tu primer pájaro</h2>
+
+            <figure>
+                <img src="./assets/images/periquito.jpg" width="40%" alt="Periquito verde">
+                <figcaption>Periquito verde en rama</figcaption>
+            </figure>
+
+            <p>
+                Si es tu primera vez comprando un pájaro, es importante conocer su carácter,
+                alimentación y nivel de cuidados. Aquí te explicamos las especies más recomendadas
+                para principiantes.
+            </p>
+        </article>
+
+
+        <!-- INFORMACIÓN COMPLEMENTARIA: SERÍA ASIDE -->
+        <aside>
+            <h3>Pájaros recomendados</h3>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Diamante mandarín</a></li>
+                    <li><a href="#">Canario timbrado</a></li>
+                    <li><a href="#">Periquito común</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+
+        <!-- FORMULARIO QUE SERÍA SECTION -->
+        <section>
+            <h2>Consulta disponibilidad</h2>
+            <p>Rellena este formulario para preguntar por un pájaro concreto:</p>
+
+            <form action="#" method="post">
+                    <label>
+                        <span>Nombre: <br>
+                            <input type="text" name="nombre">
+                        </span>
+                    </label>
+                    <br>
+                    <label>
+                        <span>Email: <br>
+                            <input type="email" name="email">
+                        </span>
+                    </label>
+                    <br>
+                    <label>
+                        <span>Consulta: <br>
+                            <textarea name="mensaje" rows="5"></textarea>
+                        </span>
+                    </label>
+                    <br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA SIN SEMÁNTICA -->
+    <footer>
+
+        <address>
+            Contacto:
+            <a href="mailto:info@kioskocarlos.es">info@kioskocarlos.es</a>
+        </address>
+
+        <time>
+            <p>Última actualización:</p>
+            2025-11-25 10:30
+        </time>
+
+        <p>© 2025 Kiosko Carlos - Todos los derechos reservados</p>
+
+    </footer>
+
+</body>
+</html>
