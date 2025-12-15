@@ -49,38 +49,53 @@
         <form class="form">
 
                 <!-- CAMPO NOMBRE -->
-                <div class="campo">
+                <div class="campo nombre">
                     <label>Nombre completo:</label>
                     <input type="text" 
-                           placeholder="Introduce tu nombre y apellidos"
+                           placeholder="Nombre y Apellido"
                            required>
                 </div>
 
                 <!-- CAMPO EMAIL -->
-                <div class="campo">
+                <div class="campo email">
                     <label>Email:</label>
                     <input type="email" 
-                           placeholder="ejemplo@correo.com"
+                           placeholder="ejemplo@ciruelo.com"
                            required>
                 </div>
 
                 <!-- CAMPO TELÉFONO -->
-                <div class="campo">
+                <div class="campo telefono">
                     <label>Teléfono:</label>
                     <input type="tel" 
-                           placeholder="Tu número de contacto"
+                           placeholder="Número de contacto"
                            required>
                 </div>
 
-                <!-- TIPO DE CAMA ITALIANA -->
+                <!-- TIPO DE CONSULTA -->
                 <div class="campo">
-                    <label>Tipo de cama italiana:</label>
-                    <input type="text" placeholder="Canapé, abatible, sofá cama, litera...">
+                <label>Tipo de consulta:</label>
+                <select required>
+                    <option value="">Selecciona una opción</option>
+                    <option class="opt">Me escuecen las cerezas</option>
+                    <option class="opt">No cabe mi ciruelo</option>
+                    <option class="opt">Producto Dañado</option>
+                    <option class="opt">Devolución</option>
+                    <option class="opt">Reclamación</option>
+                </select>
+                </div>
+
+                  <!-- TEXTO CONSULTA -->
+                <div class="campo mensaje">
+                    <label>Mensaje:</label>
+                    <textarea rows="3"
+                        placeholder="Escribe tu consulta..."
+                        required></textarea>
                 </div>
 
                 <!-- BOTONES -->
                 <div class="buttons">
-                    <button type="submit" class="btn btn-enviar">Solicitar presupuesto</button>
+                    <button type="submit" class="btn btn-enviar">Enviar Consulta</button>
                     <button type="reset" class="btn btn-borrar">Borrar datos</button>
                 </div>
 
