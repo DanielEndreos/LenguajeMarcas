@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ropa interior masculina">
+    <meta name="keywords" content="calzoncillos, calzones, gallumbos, ropa interior, intima, suave, tela, algodón, licra, seda">
+    <meta name="author" content="Gallumbos Ciruelo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/images/favicon.ico">
+    <title>Gallumbos Ciruelo</title>
+</head>
+<body>
+    <!-- Encabezado / Header: Menú Navegación -->
+    <header>
+        <a href="./index.html">
+            <img class="header-logo" 
+                 href="www.google.es"
+                 src="./assets/images/logo2.webp" 
+                 title="Logo Empresa, Ciruelo morado con forma de partes intimas" 
+                 alt="Logo Empresa, Ciruelo morado con forma de partes intimas">
+        </a>
+        <hgroup>
+            <h1 class="header-title">Gallumbos Ciruelo</h1>
+            <p class="header-eslogan">Cuida tu <span>fruta</span>.</p>
+        </hgroup>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">☰</label>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-item"><a href="#home">Inicio</a></li>
+                <li class="header-nav-item"><a href="#productos">Productos</a></li>
+                <li class="header-nav-item"><a href="#coleccion">Colección</a></li>
+                <li class="header-nav-item"><a href="#contacto">Contacto</a></li>
+                <li class="header-nav-item"><a href="#about">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido Principal --> 
+    <main>
+
+        <p>fLorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, delectus eligendi. Distinctio quam porro tempore vel iste aut similique, eaque, reiciendis culpa quasi a iure sed possimus maxime totam consequuntur!</p>
+        <p>fLorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, delectus eligendi. Distinctio quam porro tempore vel iste aut similique, eaque, reiciendis culpa quasi a iure sed possimus maxime totam consequuntur!</p>
+        <section id="contacto" class="contacto">
+            <h2>Contactanos</h2>
+
+        <form class="form">
+
+                <!-- CAMPO NOMBRE -->
+                <div class="campo">
+                    <label>Nombre completo:</label>
+                    <input type="text" 
+                           placeholder="Introduce tu nombre y apellidos"
+                           required>
+                </div>
+
+                <!-- CAMPO EMAIL -->
+                <div class="campo">
+                    <label>Email:</label>
+                    <input type="email" 
+                           placeholder="ejemplo@correo.com"
+                           required>
+                </div>
+
+                <!-- CAMPO TELÉFONO -->
+                <div class="campo">
+                    <label>Teléfono:</label>
+                    <input type="tel" 
+                           placeholder="Tu número de contacto"
+                           required>
+                </div>
+
+                <!-- TIPO DE CAMA ITALIANA -->
+                <div class="campo">
+                    <label>Tipo de cama italiana:</label>
+                    <input type="text" placeholder="Canapé, abatible, sofá cama, litera...">
+                </div>
+
+                <!-- BOTONES -->
+                <div class="buttons">
+                    <button type="submit" class="btn btn-enviar">Solicitar presupuesto</button>
+                    <button type="reset" class="btn btn-borrar">Borrar datos</button>
+                </div>
+
+            </form>
+
+        </section>    
+    </main>
+
+    <footer>
+
+        <p>&copy;2025 Gallumbos Ciruelo</p>
+        <p>Derechos Reservados.</p>
+    
+    </footer>
+</body>
+</html>
