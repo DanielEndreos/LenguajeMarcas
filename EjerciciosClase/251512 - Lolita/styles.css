@@ -1,0 +1,98 @@
+*{
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: azure;   
+    color: #333;
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    background-color: forestgreen;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+/* FORMULARIO */
+
+.contacto{
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.contacto .trozo {
+    color: blue;
+    font-weight: bold;
+}
+
+.form .campo {
+    margin-bottom: 15px;
+}
+
+.form span{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form input,
+.form textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(10,113,136);
+    font-size: 1.2rem;
+    /* transition: box-shadow 0.3s ease; */
+}
+
+.form input:hover,
+.form textarea:hover{
+    border-color: red;
+    border: 3px solid red;
+}
+
+.form input:focus,
+.form textarea:focus{
+    outline:none;
+    border-color: red;
+    box-shadow: -2px -2px 5px orange;
+}
+
+.btn{
+    padding: 20px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.btn-enviar{
+    background-color: cadetblue;    
+    color: white;
+   
+}
+
+.btn-borrar{
+    background-color: red;
+    color: #ffffff;
+}
+
+.btn-enviar:hover{
+    background-color: grey;
+    transform: scale(1.05);
+}
+
+
+.btn-borrar:hover{
+    background-color: grey;
+    transform: scale(1.05);
+}
