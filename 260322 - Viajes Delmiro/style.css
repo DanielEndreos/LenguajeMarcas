@@ -1,0 +1,408 @@
+/* VARIABLES */
+:root {
+    --color-header-footer: rgb(255, 255, 255);
+    --color-fondo: rgb(255, 255, 255);
+    --color-texto: rgb(30, 30, 30);
+    --color-principal: rgb(0, 122, 255);
+    --color-html: rgb(240, 240, 240);
+}
+
+/***********************************************************************************************/
+/*                                          GLOBAL                                             */
+/***********************************************************************************************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: red 1px solid; */
+}
+
+a{
+    text-decoration: none;
+}
+
+html {
+    background: var(--color-html);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--color-html);
+}
+
+/* Enlace para saltar */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--color-principal);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+main{
+    background: var(--color-fondo);
+    max-width: 1280px;
+    margin: 20px auto 40px auto;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border-radius: 12px;
+}
+
+@media (max-width: 1330px) {
+    main {
+        margin: 20px 20px ;
+    }
+}
+
+/***********************************************************************************************/
+/*                                          HEADER                                             */
+/***********************************************************************************************/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-header-footer);
+    padding: 5px 20px;
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+.header-logo{
+    height: 60px;
+}
+
+/* MENU */
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-list a {
+    color: var(--color-texto);
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 20px;
+}
+
+.nav-list a:hover {
+    transform: scale(1.05);
+    color: var(--color-principal);
+}
+
+/***********************************************************************************************/
+/*                                        TITULOS                                              */
+/***********************************************************************************************/
+
+.titulo-section {
+    margin-top: 20px;
+    color: var(--color-principal);
+    font-family: 'Comic Neue', cursive;
+}
+
+.separador-section {
+    margin-bottom: 20px;
+    border: 1px solid var(--color-principal);
+}
+
+/***********************************************************************************************/
+/*                                          HERO                                               */
+/***********************************************************************************************/
+
+.home-contenido {
+    text-align: center;
+}
+
+/* botones principales */
+.home-botones {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+}
+
+/***********************************************************************************************/
+/*                                         BOTONES                                             */
+/***********************************************************************************************/
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    background: var(--color-principal);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-sec {
+    background: gray;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+
+/**************************/
+/*    Estilos Botones     */
+/**************************/
+
+.form .buttons{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btn{
+    padding: 20px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0px 10px 0px;
+    transition: border-color 0.3s ease;
+}
+
+.btn-enviar{
+    background-color: cadetblue;
+    color: white;
+    position:relative;
+    
+}
+
+.btn-borrar{
+    background-color: red;
+    color: white;
+}
+
+.btn-enviar:hover,
+.btn-borrar:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/***********************************************************************************************/
+/*                                       DESTINOS                                              */
+/***********************************************************************************************/
+
+.destinos{
+    padding-bottom: 20px;
+}
+
+/* grid principal de tarjetas */
+.lista-destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    list-style: none;
+}
+
+/* cada item */
+.item-destino {
+    display: flex;
+    justify-content: center;
+}
+
+/* tarjeta */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* estructura imagen */
+.card figure {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    align-items: center;
+}
+
+/* imagen */
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* linea separadora */
+.card .line {
+    margin: 10px auto;
+    width: 80%;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+/* texto imagen */
+.card figcaption {
+    font-size: 0.9rem;
+    padding: 0 10px;
+}
+
+/* precio */
+.precio {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/***********************************************************************************************/
+/*                                         INFO                                                */
+/***********************************************************************************************/
+
+.info{
+ padding-bottom: 20px;   
+} 
+
+.lista-info {
+    margin-left: 20px;
+}
+
+/***********************************************************************************************/
+/*                                         CONTACTO                                            */
+/***********************************************************************************************/
+
+.contacto{
+    padding-bottom: 10px;
+}
+
+/**************************/
+/*    Grid Formulario     */
+/**************************/
+.form{
+    background-color: white;
+    justify-self: center;
+    border-radius: 10px;
+    border: 1px solid rgb(116, 115, 115);
+    padding: 20px;
+    margin: 10px auto;
+    max-width: max-content;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+            "nombre email"
+            "mensaje mensaje"
+            "buttons buttons";
+}
+
+.nombre{ 
+    grid-area: nombre;
+    margin-right: 20px;
+}
+.email{ grid-area: email; }
+.mensaje{ grid-area: mensaje; }
+.buttons{ grid-area: buttons; }
+
+/**************************/
+/*     Estilos Inputs     */
+/**************************/
+.form .campo{ margin-bottom: 15px; }
+
+.form .campo label{
+    display:block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form input, 
+.form textarea{
+    width: 100%;
+    color: var(--color-texto);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: lightgray;
+}
+
+/* Hover: Cursor Por Encima */
+.form input:hover,
+.form textarea:hover{
+    background-color: white;
+    border: 2px solid purple;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+/* Focus: Seleccionado */
+.form input:focus,
+.form textarea:focus{
+    background-color: white;
+    border: 2px solid purple;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+    outline: none;
+}
+
+/* Valid y No Focus: Dato Valido y no Seleccionado */
+.form input:valid:not(:focus):not(:placeholder-shown),
+.form textarea:valid:not(:Focus):not(:placeholder-shown){
+    border: 2px solid lightgreen;
+    background-color: white;
+}
+
+/* Invalid, No Seleccionado y Datos Introducidos */
+.form input:invalid:not(:focus):not(:placeholder-shown),
+.form textarea:invalid:not(:focus):not(:placeholder-shown){
+    border: 2px solid rgb(249, 56, 56);
+    background-color: white;
+}
+
+/* Invalido y no Seleccionado */
+.form input:invalid:not(:focus):placeholder-shown,
+.form textarea:invalid:not(:focus):placeholder-shown{
+   color: grey;
+}
+
+/***********************************************************************************************/
+/*                                         FOOTER                                              */
+/***********************************************************************************************/
+
+.footer {
+    margin-top: 40px;
+    background: var(--color-header-footer);
+    padding: 15px;
+}
+
+/***********************************************************************************************/
+/*                                      RESPONSIVE                                             */
+/***********************************************************************************************/
+
+@media (max-width: 950px) {
+
+    .nav-list {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .nav-list a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 0;
+}
+
+    .home-botones {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Viajes para adultos, pagan los niños">
+        <meta name="keywords" content="viajes, vuelos, hoteles, avion, vacaciones, verano, invierno, primavera, otoño, navidad, semana santa">
+        <meta name="author" content="Viajes Delmiro">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./assets/images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+        <title>Viajes Delmiro</title>
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+        <header class="header">
+                <a href="./index.html" class="header">
+                    <img class="header-logo"
+                    src="./assets/images/logo2.png" 
+                    title="Logo Empresa Viajes Delmiro" 
+                    alt="Logo Empresa Viajes Delmiro">
+                <hgroup class="header-info">             
+                    <h1 class="header-title">Viajes Delmiro</h1>
+                    <p class="header-eslogan">Los adultos viajan gratis. Los niños no.</p>
+                </hgroup>
+                </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#info">Cómo funciona</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!-- MAIN -->
+        <main>
+
+            <!-- HERO -->
+            <section id="home" class="home">
+                <h2 class="titulo-section">Viajar sin pagar</h2>
+                <hr class="separador-section">
+
+                <div class="home-contenido">
+                    <p>
+                        En <strong>Viajes Delmiro</strong> cambiamos las reglas: los adultos no pagan.
+                        Diseñamos viajes para que los niños disfruten mientras tú te olvidas del coste.
+                    </p>
+
+                    <ul class="home-botones">
+                        <li><a href="#destinos" class="btn">Ver destinos</a></li>
+                        <li><a href="#contacto" class="btn btn-sec">Reservar</a></li>
+                    </ul>
+
+                    <div>
+                        <p><strong>Oferta:</strong> Adultos gratis en todos los viajes (siempre que le acompañe un niño).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DESTINOS -->
+            <section id="destinos" class="destinos">
+                <h2 class="titulo-section">Destinos</h2>
+                <hr class="separador-section">
+
+                <ul class="lista-destinos">
+
+                    <li class="item-destino">
+                        <article class="card">
+                            <figure>
+                                <img src="./assets/images/disney.png"
+                                    alt="Parque Disneyland París con atracciones mágicas para niños"
+                                    title="Disneyland París">
+                                <hr class="line">
+                                <figcaption>Magia para los niños.</figcaption>
+                            </figure>
+
+                            <h3>Disneyland París</h3>
+                            <p class="precio">Desde 299€ niño</p>
+                            <button class="btn">Ver más</button>
+                        </article>
+                    </li>
+
+                    <li class="item-destino">
+                        <article class="card">
+                            <figure>
+                                <img src="./assets/images/warner.png"
+                                    alt="Parque Warner Madrid con montañas rusas y shows para familias"
+                                    title="Parque Warner Madrid">
+                                <hr class="line">
+                                <figcaption>Atracciones y diversión.</figcaption>
+                            </figure>
+
+                            <h3>Parque Warner</h3>
+                            <p class="precio">Desde 199€ niño</p>
+                            <button class="btn">Ver más</button>
+                        </article>
+                    </li>
+
+                    <li class="item-destino">
+                        <article class="card">
+                            <figure>
+                                <img src="./assets/images/caribe.png"
+                                    alt="Hotel en el Caribe con playa y actividades acuáticas para familias"
+                                    title="Hotel en el Caribe con playa">
+                                <hr class="line">
+                                <figcaption>Sol y actividades familiares.</figcaption>
+                            </figure>
+
+                            <h3>Hotel Caribe</h3>
+                            <p class="precio">Desde 249€ niño</p>
+                            <button class="btn">Ver más</button>
+                        </article>
+                    </li>
+
+                    <li class="item-destino">
+                        <article class="card">
+                            <figure>
+                                <img src="./assets/images/alpes.png" 
+                                     alt="Montañas nevadas en los Alpes con esquí y actividades invernales para familias"
+                                     title="Alpes Suizos">
+                                <hr class="line">
+                                <figcaption>Nieve y aventuras familiares.</figcaption>
+                            </figure>
+
+                            <h3>Alpes Suizos</h3>
+                            <p class="precio">Desde 349€ niño</p>
+                            <button class="btn">Ver más</button>
+                        </article>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- INFO -->
+            <section id="info" class="info">
+                <h2 class="titulo-section">Cómo funciona</h2>
+                <hr class="separador-section">
+
+                <ul class="lista-info">
+                    <li>Los niños pagan el viaje.</li>
+                    <li>Los adultos viajan gratis.</li>
+                    <li>Experiencias pensadas para familias.</li>
+                    <li>Sin costes ocultos.</li>
+                </ul>
+            </section>
+
+            <!-- CONTACTO -->
+            <section id="contacto" class="contacto">
+                <h2 class="titulo-section">Contacto</h2>
+                <hr class="separador-section">
+
+                <form class="form">
+
+                    <!-- CAMPO NOMBRE -->
+                    <div class="campo nombre">
+                        <label>Nombre completo:</label>
+                        <input type="text" 
+                            placeholder="Nombre y Apellido"
+                            required>
+                    </div>
+
+                 
+                    <!-- CAMPO EMAIL -->
+                    <div class="campo email">
+                        <label>Email:</label>
+                        <input type="email" 
+                            placeholder="ejemplo@hotmail.com"
+                            required>
+                    </div>
+
+                    <!-- TEXTO CONSULTA -->
+                    <div class="campo mensaje">
+                        <label>Mensaje:</label>
+                        <textarea rows="5"
+                            placeholder="Escribe aquí..."
+                            required></textarea>
+                    </div>
+                    
+                    <!-- BOTONES -->
+                    <div class="buttons">
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="reset" class="btn btn-borrar">Borrar datos</button>
+                    </div>
+
+                </form>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>© 2026 Viajes Delmiro</p>
+            <p>Adultos gratis. Siempre.</p>
+        </footer>
+
+    </body>
+</html>
